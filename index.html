@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Tickets</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="javascript1.js"></script>
+</head>
+
+<body onload="myFunc2()">
+    <main>
+        <h1>Book Movie Tickets</h1><br/>
+		<form method="get" action="payment.html">
+        <label for="movie">Pick a movie:</label>
+		<select onchange="func1()" name="movie" id="movie" >
+		<option></option>
+		<option value="titanic">Titanic ($13.00)</option>
+		<option value="pirates">Pirates of Carribean ($15.00)</option>
+		<option value="Eat Pray Love">East Pray Love ($10.00)</option>
+		</select>
+		<br><br>
+		<div class="grid-container">
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item" onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		  <div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div><div class="grid-item"onclick="myFunction(this,'#62F91F')"></div>
+		</div>
+		<br/>	
+		<div class="grid-container1">
+		  <div class="grid-item1"></div>
+		  <div class="grid-item2"></div>
+		  <div class="grid-item3"></div>		  
+		 </div>
+		 &nbsp;&nbsp;&nbsp;&nbsp;N/A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Selected &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Occupied <br/><br/><br/><br/>
+		 Movie Selected: <label name = "selectedmovie" id = "selectedmovie"></label> <br/><br/>
+		 Ticket Price: <label name = "tprice" id = "tprice"></label> <br/><br/>
+		 Number of seats selected: <label name = "selectedseats" id = "selectedseats"></label> <br/><br/>
+		 Total Price: <label name = "totalprice" id = "totalprice"></label> <br/><br/>
+		<input type="submit" value="BUY SEATS" class="button">
+    </main>
+	</form>
+</body>
+</html>
